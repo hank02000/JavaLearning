@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: 微軟正黑體;
+            }
+            ul.menu{
+                list-style: none;
+                background-color: #333;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul.menu li{
+                float: left;
+            }
+            ul.menu li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            ul.menu li a:hover{
+                color: black;
+                background-color: #ccc;
+            }
+            ul.menu li.login{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="login"><a href="javascript: return false;" id="loginLink">Login</a></li>
+        </ul>
+        <div id="blockUI" class="">
+            <div id="loginPanel">
+                <label>帳號:</label><br>
+                <input type="text" id="account" placeholder="User ID"><br>
+                <label>密碼</label><br>
+                <input type="password" id="passwd" placeholder="Password"><br>
+            </div>
+            <div id="funBars">
+                <input type="button" id="cancelBtn" value="Cancel">
+                <input type="button" id="loginBtn" value="Login">
+            </div>
+        </div>
+    </body>
+</html>
